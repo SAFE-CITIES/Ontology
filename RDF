@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wheuvel/ontologies/2023/5/untitled-ontology-32#"
+     xml:base="http://www.semanticweb.org/wheuvel/ontologies/2023/5/untitled-ontology-32"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#NPC-damage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#NPC-damage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#damage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#NPC-in-scenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#NPC-in-scenario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Scenario_Segment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#NPC-scores -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#NPC-scores">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#score"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#URI-of-NPC-visual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#URI-of-NPC-visual">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#URI-game-element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#availableResources -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#availableResources">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning]"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-resources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#behavioral-model-NPC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#behavioral-model-NPC">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#behavioral_model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#constrained_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#constrained_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning]"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_constraints"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#coverage_CCTV -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#coverage_CCTV">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#CCTV"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#action_radius"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#defend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#defend">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#defensive_actions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#incurs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#incurs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Events"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#location_of_CCTV -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#location_of_CCTV">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#CCTV"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry_of_planning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry_of_planning">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning]"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#react -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#react">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#jamming"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#UAV"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#schedules -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#schedules">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning]"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#schedule_game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#time-window-planning -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#time-window-planning">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning]"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#timing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Game_Scenario"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Scenario_Segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Scenario_Segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#CCTV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#CCTV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Dynamic_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Dynamic_Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Events">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Scenario_Segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Game_Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Game_Scenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#(Non)playable_Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object_Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object_Models -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object_Models"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#(Non)playable_Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Scenario_Segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Scenario_Segment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object_Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#UAV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#UAV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#URI-game-element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#URI-game-element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#action_radius -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#action_radius">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#begin_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#begin_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#timing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#behavioral_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#behavioral_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object_Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#bombing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#bombing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#damage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#damage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#defensive_actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#defensive_actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Activities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#detect_drone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#detect_drone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#end-time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#end-time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#timing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#fights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#fights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_constraints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_constraints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#lifecyle_performance_models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#jamming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#jamming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#defensive_actions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#lifecyle_performance_models -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#lifecyle_performance_models"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#location_construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#location_construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#location_road -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#location_road">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#loss_of_communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#loss_of_communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Activities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimeter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimeter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#radar_UAV_ground_control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#radar_UAV_ground_control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#monitoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#risk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#schedule_game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#schedule_game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#score">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#timing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#timing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#urban_furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#urban_furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Static_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#vulnerability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#vulnerability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#(Non)playable_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#(Non)playable_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Object_Models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#capacity/capbaility_planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#capacity/capbaility_planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#lifecyle_performance_models"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning] -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game-planning]">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#game_definititions"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Camera-Entrance-Apollo-Tent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Camera-Entrance-Apollo-Tent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#CCTV"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#First-Aid-Responder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#First-Aid-Responder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Non-playable_Character"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#(latitude):_51.6196625__(longitude):_5.4334973 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#(latitude):_51.6196625__(longitude):_5.4334973">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimetry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#90o,_350meters,_nightvision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#90o,_350meters,_nightvision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#action_radius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Latitude:_-11.75354,_Longitude:_-76.18955 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#Latitude:_-11.75354,_Longitude:_-76.18955">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#perimeter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#iniate,_alert,_move,_help,_coordinate,_de-escalate,_terminate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#iniate,_alert,_move,_help,_coordinate,_de-escalate,_terminate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#behavioral_model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Ontology rdf:about=&quot;http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology/npc/first-aid-responder -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2002/07/owl#Ontology rdf:about=&quot;http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology/npc/first-aid-responder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wheuvel/ontologies/2023/5/Safe-Cities-Ontology#URI-game-element"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
